@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Personal Blog of Abhishek Potnis
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://aanagaich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: anugrah_nagaich
+linkedin_username: Anugrah Anilkumar Nagaich
 twitter_username: AnugrahNagaich
 github_username:  aanagaich
 show_excerpts: true
