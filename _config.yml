@@ -13,14 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Abhishek's Blog
-email: abhishekvpotnis@iitb.ac.in
+title: Anugrah Anilkumar Nagaich 
+email: aanagaich@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Personal Blog of Abhishek Potnis
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://abhishekvp.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: abhishek_potnis
-github_username:  abhishekvp
+url: "http://aanagaich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+linkedin_username: anugrah_nagaich
+twitter_username: AnugrahNagaich
+github_username:  aanagaich
 show_excerpts: true
 # Build settings
 markdown: kramdown
@@ -44,5 +45,5 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 baseurl: ""
-production_url : http://abhishekvp.github.io
-BASE_PATH : http://abhishekvp.github.io
+production_url : http://aanagaich.github.io
+BASE_PATH : http://aanagaich.github.io
