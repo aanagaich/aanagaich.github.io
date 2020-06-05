@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Installing and Running Librat - A Monte Carlo Ray Tracing Library | Abhishek’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Installing and Running Librat - A Monte Carlo Ray Tracing Library" />
+<meta name="author" content="abhishekp" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Tutorial on Installing Librat - A Monte Carlo Ray Tracing Library" />
+<meta property="og:description" content="Tutorial on Installing Librat - A Monte Carlo Ray Tracing Library" />
+<link rel="canonical" href="http://localhost:4000/2017/01/12/installing-and-running-librat-monte.html" />
+<meta property="og:url" content="http://localhost:4000/2017/01/12/installing-and-running-librat-monte.html" />
+<meta property="og:site_name" content="Abhishek’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-12T11:33:00+05:30" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"Installing and Running Librat - A Monte Carlo Ray Tracing Library","dateModified":"2017-01-12T11:33:00+05:30","datePublished":"2017-01-12T11:33:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/01/12/installing-and-running-librat-monte.html"},"url":"http://localhost:4000/2017/01/12/installing-and-running-librat-monte.html","author":{"@type":"Person","name":"abhishekp"},"description":"Tutorial on Installing Librat - A Monte Carlo Ray Tracing Library","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Abhishek's Blog" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">Abhishek&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about.html">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Installing and Running Librat - A Monte Carlo Ray Tracing Library</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-01-12T11:33:00+05:30" itemprop="datePublished">Jan 12, 2017
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">abhishekp</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <div dir="ltr" style="text-align: left;" trbidi="on">Librat is a free-ware Monte Carlo Ray Tracing Library developed at <a href="http://www.geog.ucl.ac.uk/">UCL Geography</a>, by <a href="http://www.geog.ucl.ac.uk/about-the-department/people/academic-staff/philip-lewis">Prof. P. Lewis</a> and <a href="http://www.geog.ucl.ac.uk/about-the-department/people/academic-staff/mat-disney">Dr. M. Disney</a>.  The official documentation on Librat can be found <a href="https://librat.wikispaces.com/">here</a>.<br /><br /><table align="center" cellpadding="0" cellspacing="0" class="tr-caption-container" style="margin-left: auto; margin-right: auto; text-align: center;"><tbody><tr><td style="text-align: center;"><a href="https://4.bp.blogspot.com/-SfGmH0IUUJc/WHcb3wuRzCI/AAAAAAAANMM/TUorC5zifCUcP3ImM5Fubetp26_YsjtTQCLcB/s1600/cboxgi.jpg" style="margin-left: auto; margin-right: auto;"><img border="0" height="480" src="https://4.bp.blogspot.com/-SfGmH0IUUJc/WHcb3wuRzCI/AAAAAAAANMM/TUorC5zifCUcP3ImM5Fubetp26_YsjtTQCLcB/s640/cboxgi.jpg" width="640" /></a></td></tr><tr><td class="tr-caption" style="text-align: center;">Source: http://graphics.stanford.edu/~henrik/&nbsp;</td></tr></tbody></table><br />I had faced some difficulty, trying to get Librat up and running on my Ubuntu and so once I did, I decided to write a simplified set of instructions for others to follow. So here goes.<br /><br /><br /><b>Installation </b><br /><br /><div>Download the installation bash script from here: <a href="http://www2.geog.ucl.ac.uk/~plewis/bpms/src/lib/configure" target="_blank">http://www2.geog.ucl.ac.uk/~plewis/bpms/src/lib/configure </a><br /><br /></div><div>1. Make it executable: <br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> $ chmod +x configure.sh <br /></code></pre><center><br /></center>2. Run the script:  <br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> $ /.configure.sh<br /></code></pre>You should find the directory 'bpms' under /home/yourUsrNm/ after completion of the script.<br /><br />3. Download hipstats executable from <a href="http://www2.geog.ucl.ac.uk/~plewis/bpms/bin/x86_64/" target="_blank">http://www2.geog.ucl.ac.uk/~plewis/bpms/bin/x86_64/</a>. Paste it in the home/yourUsrNm/bpms/bin/yourSystemArch directory<br /><br />4. Set Path  <br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;"> sudo gedit .bashrc<br /></code></pre>Append the following lines to .bashrc<br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">export PATH=${PATH}:/home/yourUsrNm/bpms/bin/yourSystemArch<br />export PATH=${PATH}:/home/yourUsrNm/bpms/bin/csh<br />export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/home/usrnm/bpms/src/lib<br />export BPMS=/home/yourUsrNm/bpms<br />#{Replace yourUsrNm with your Username}<br />#{Replace yourSystemArch with your system architecture | Can be found b 'uname -my'}<br /></code></pre>Save, Close and Reload .bashrc. ~/.bashrc<br /><br /><b>Running</b><br /><br />1. Download and extract test examples say in a directory 'lidar' {preferably in the home directory} from here: <a href="http://www2.geog.ucl.ac.uk/~plewis/bpms/src/start/tests/lidar/lidar.tar.Z" target="_blank">http://www2.geog.ucl.ac.uk/~plewis/bpms/src/start/tests/lidar/lidar.tar.Z </a><br /><br />cd into the extracted directory <br /><br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">echo 16 0 0 100000 200000 200000 512 512 1 heightmap2.hips | ../bpms/src/start/start -v testslope.obj</code></pre><br />Explanation of the syntax can be found here:&nbsp;<a href="http://www2.geog.ucl.ac.uk/~plewis/bpms/src/start/tests/lidar/lidar1.html">http://www2.geog.ucl.ac.uk/~plewis/bpms/src/start/tests/lidar/lidar1.html</a><br /><br />It will generate the heightmap2.hips file.<br /><br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">hipstats &lt; heightmap2.hips</code></pre><br />This should give something on the lines of ' Frame 0 : n=262144 mean=549.504 SD=57666.326 Min=-99999.219 Max=99998.898' <br /><br />2. Lets now convert the .hips file into a viewable image <br /><br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">linear &lt; heightmap2.hips | hips2pbm &gt; image.pbm</code></pre><br />A file 'image.pbm' would be generated. You can view the file using<br /><br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">display image.pbm</code></pre><br />3. Convert the image into a .gif using<br /><br /><pre style="background: #f0f0f0; border: 1px dashed #cccccc; color: black; font-family: &quot;arial&quot;; font-size: 12px; height: auto; line-height: 20px; overflow: auto; padding: 0px; text-align: left; width: 99%;"><code style="color: black; word-wrap: normal;">convert image.pbm image.gif</code></pre><br />You can now open the image.gif file to see the generated image. <br /><br />If you see an image as expected, everything has worked fine. Go ahead and start working with Librat! Have a great day! :D<br /><br /></div></div>
+
+  </div><a class="u-url" href="/2017/01/12/installing-and-running-librat-monte.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Abhishek&#39;s Blog</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Abhishek&#39;s Blog</li><li><a class="u-email" href="mailto:abhishekvpotnis@iitb.ac.in">abhishekvpotnis@iitb.ac.in</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/abhishekvp"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">abhishekvp</span></a></li><li><a href="https://www.twitter.com/abhishek_potnis"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">abhishek_potnis</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Personal Blog of Abhishek Potnis</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
