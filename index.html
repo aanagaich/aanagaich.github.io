@@ -1,255 +1,540 @@
 <!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Dr. Anugrah A. Nagaich</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">About</a></li>
-					<li><a href="#acads">Academics</a></li>
-					<li><a href="#achieve">Achievements</a></li>
-					<li><a href="#publi">Publications</a></li>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				</ul>
-			</nav>
+    <title>Dr. Anugrah A. Nagaich</title>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/Anugrah Latest.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<br> <br> 
-								<h1>Dr. Anugrah Anilkumar Nagaich</h1>
-							</header>
-							<p style="text-align: center;"> Assistant Professor, <br/> <a href="http://www.manit.ac.in/architecture-planning">Department of Architecture and Planning</a>, <br/><a href="http://www.manit.ac.in">Maulana Azad National Institute of Technology</a>, Bhopal,<br/> Madhya Pradesh, India- 462003</p> 
-							<br><br><br>
-							<a href="#contact" class="button small scrolly">Contact</a>
-						</div>
-					</div>
-				</div>
-			</article>
+    <meta name="description"
+        content="Official academic webpage of Dr. Anugrah A. Nagaich, Assistant Professor at MANIT Bhopal specializing in Smart Cities, Urban Informatics, Machine Learning, and Geospatial Planning." />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-		<!-- Acad -->
-			<article id="acads" class="wrapper style2">
-				<div class="container">
-					<header>
-					<h2>Research Interests</h2>
-					<br><span style="color: black;"> &#9702; Geoinformatics<br>&#9702; Natural Resources Engineering and Management<br>&#9702; Smart Cities <br>&#9702; Urban and Regional Planning <br>&#9702; Machine Learning and Urban Informatics <br>&#9702; Indian Knowledge System in Planning & Architecture <br>&#9702; Intellectual Property Rights in Planning & Architecture</span>   
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
 
-					 <br> <br> <br>
+        :root {
+            --primary: #0f172a;
+            --secondary: #1e293b;
+            --accent: #f59e0b;
+            --light: #f8fafc;
+            --text: #334155;
+            --white: #ffffff;
+        }
 
-						<h2>Academic Credentials</h2>
-				
-						<br>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.7;
+        }
 
-                    <div id="pTitle"><b>Ph.D. </b><span style="color: black;">[2022 - 2025]</span><br><b>Maulana Azad National Institute of Technology, Bhopal</b>, India</div>
-                    <div id="course"><b>Specialization:</b> ML-Based Smart Geospatial Analyses for Urban Planning, Management & Governance </div>
-						
-						<br>
+        a {
+            text-decoration: none;
+            color: var(--accent);
+        }
 
-                    <div id="pTitle"><b>M.Tech. </b><span style="color: black;">[2014 - 2016]</span><br><b>Indian Institute of Technology Bombay</b>, Mumbai, India</div>
-                    <div id="course"><b>Specialization:</b> Geoinformatics and Natural Resources Engineering </div>
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
-               <br>
-					<div id="pTitle"><b>CitiesX </b><span style="color: black;"> [2019 - 2020]</span><br><b><a href="https://vpal.harvard.edu/harvardx">HarvardX</a></b>, Harvard University, USA</div>
-                    <div id="course">with <b>Certificate of Achievement</b> </div>
-                
-                <br>
-					<div id="pTitle"><b>Post Graduate Diploma in Intellectual Property Rights</b> <span style="color: black;"> [2016 - 2018]</span> <br><b><a href="http://www.ignou.ac.in/">Indira Gandhi National Open University</a></b>, New Delhi, India</div>
-				
-				<br>
-					<div id="pTitle"><b>Post Graduate Diploma in Environmental Management</b> <span style="color: black;"> [2013 - 2014]</span> <br><b><a href="http://www.epco.in/">Institute of Environmental Studies, Environmental Planning and Coordination Organization (E.P.C.O.)</a></b>, Bhopal, India</div>
-				
-				<br>
-                    <div id="pTitle"><b>B. Planning</b> <span style="color: black;"> [2009 - 2013]</span><br><b>Maulana Azad National Institute of Technology, Bhopal</b>, India</div>
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to right, #0f172a, #1e293b);
+            color: white;
+            padding-top: 100px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text h2 {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .hero-text p {
+            margin-bottom: 2rem;
+            color: #e2e8f0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: black;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+        }
+
+        .btn-secondary {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: black;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        /* STATS */
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: var(--accent);
+        }
+
+        /* RESEARCH INTERESTS */
+
+        .interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .interest-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 14px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        }
+
+        /* PUBLICATIONS */
+
+        .publication-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
+        }
+
+        .publication-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .publication-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+        }
+
+        /* CONTACT */
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-links a {
+            background: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
+        }
+
+        .contact-links a:hover {
+            transform: translateY(-4px);
+        }
+
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:900px) {
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="about">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="hero-image">
+                    <img src="images/Anugrah Latest.jpg" alt="Dr. Anugrah Nagaich">
+                </div>
+
+                <div class="hero-text">
+
+                    <h1>Dr. Anugrah A. Nagaich</h1>
+
+                    <h2>
+                        Assistant Professor • Urban Informatics • Smart Cities • Geospatial Planning
+                    </h2>
+
+                    <p>
+                        Assistant Professor at the Department of Architecture and Planning,
+                        Maulana Azad National Institute of Technology (MANIT), Bhopal.
+                        Passionate about Smart Cities, Urban Informatics,
+                        Machine Learning, Wetland Research, and Indian Knowledge Systems.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="#publications" class="btn btn-primary">
+                            Publications
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact
+                        </a>
+
+                    </div>
 
                 </div>
 
+            </div>
 
-				</div>
-			</article>
+        </div>
 
+    </section>
 
-		<!-- Achievements -->
-			<article id="achieve" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Achievements and Awards</h2>
-		<br>
-                <div>
+    <!-- STATS -->
 
-                      	<li>Completed the course of <b><a href="https://www.coursera.org/learn/generative-ai-for-everyone">‘Generative A.I. for Everyone’</a></b> by <b><a href="https://www.deeplearning.ai/">DeepLearning.AI</a></b> (offered by <a href="https://www.andrewng.org">Prof. Andrew Ng</a>, Adjunct Professor, Stanford University, USA). <b>[2023]</b></li> 
-							<br>
-			<li>Completed Online <b>National Level Short Term Course on 'Heritage of Nagara Style Temples (from Earliest Times to 21st Century)'</b> offered by the <b><a href="https://heritagefoundation.in/">‘Heritage Foundation, Jalgaon, Maharashtra’</a></b>. <b>[2021]</b></li> 
-							<br>
-			<li>Completed the <b>TEQIP-III sponsored e-Training Faculty Development Programme (FDP)</b> on <b>'Machine Learning Techniques for Cross-Domain Applications'</b> organized by <b><a href="https://www.iiti.ac.in/">‘IIT Indore, India’</a></b>. <b>[2020]</b></li> 
-							<br>
-			<li>Completed the online course of <b><a href="https://www.elementsofai.com/">‘Elements of Artificial Intelligence’</a></b> offered by <a href="https://www.reaktor.com/">‘Reaktor’</a> and the <b>University of Helsinki (Finland)</b>. <b>[2020]</b></li> 
-							<br>
-                      	<li>Completed the online course of <b><a href="https://www.cisindus.org/courses/indian-models-of-economy-business-and-management-part-i/">‘Indian Models of Economy, Business and Management’</a></b> by Centre of Indic Studies, India. <b>[2020]</b></li>
-							<br>
-					  <li>Completed the course of <b><a href="https://www.coursera.org/learn/ai-for-everyone">‘Artificial Intelligence for Everyone’</a></b> by <b><a href="https://www.deeplearning.ai/">DeepLearning.AI</a></b> (offered by <a href="https://www.andrewng.org">Prof. Andrew Ng</a>, Adjunct Professor, Stanford University, USA). <b>[2020]</b></li>  
-							<br>					  
-					  <li>Completed the course of <b><a href="https://online-learning.harvard.edu/course/citiesx-past-present-and-future-urban-life?gclid=EAIaIQobChMIsJDFkPfq6QIV2yMrCh0RjgtZEAAYASAAEgL1HfD_BwE">‘CitiesX’</a></b> from <b><a href="https://vpal.harvard.edu/harvardx">HarvardX</a></b> (initiative of Harvard University, USA) with a <b>Certificate of Achievement</b>. <b>[2019]</b></li>
-							<br>                     
-                      <li>Completed the course (under Faculty Development Programme) of <b><a href="https://swayam.gov.in/nd1_noc19_ae07/preview">‘Introduction to Ancient Indian Technology’</a></b> offered by <b><a href="https://www.iitk.ac.in/">IIT Kanpur</a></b> and <b><a href="https://nptel.ac.in/">N.P.T.E.L.</a></b>, Government of India. <b>[2019]</b> </li>
-							<br>
-                      <li>Completed the <b><a href="http://www.climatechange.mp.gov.in/sites/default/files/latest-updates/events/Brochure_CCAC.pdf">‘Climate Change Appreciation Course’</a></b> organized by <b>Madhya Pradesh Clean Development Mechanism Agency</b>, Government of Madhya Pradesh. <b>[2017]</b> </li>  
-							<br>
-                      <li> Completed the course of <b><a href="https://www.edx.org/course/sustainable-cities-2">‘Sustainable Cities’</a></b> offered by the <b><a href="https://sdgacademy.org/">SDG Academy</a></b> (online education platform of the Sustainable Development Solutions Network (SDSN), a global initiative for the United Nations) and obtained <b>Certificate of Proficiency with Distinction</b>. <b>[2017]</b></li> 
-							<br>					
-					  <li> Recipient of <b><a href="https://www.ieindia.org/WebUI/IEI-Publication.aspx/ajax/Custom/IEI-Activities.aspx#RC-singh-prize">Prof. R.C. Singh Prize</a></b> in the <b>31st Indian Engineering Congress by the <a href="https://www.ieindia.org/webui/iei-home.aspx">Institution of Engineers (India)</a> </b> for my <b>paper having the ‘Greatest Practical Importance’</b>. <b>[2016]</b></li>  
-							<br>
-					  <li> Completed the <b><a href="https://elearning.iirs.gov.in/">IIRS-ISRO Outreach Programme</a> on <a href="https://www.isro.gov.in/first-theme-based-line-outreach-programme-conducted-iirs-geo-spatial-technologies-urban-planning">Geospatial Technologies for Urban Planning</a></b>. <b>[2016]</b></li>  
-							<br>
-					  <li> Completed <b><a href="https://smartcitiescouncil.com/events/national-professional-training-certificate-course-smart-cities-development-india-0">National Professional Training Certificate Course on Smart Cities Development</a></b>. <b>[2015]</b></li>  
-							<br>
-					  <li> Secured <b>All India Rank 73</b> in <b>G.A.T.E. 2013</b> in the Architecture & Planning stream. <b>[2013]</b> </li> 
-							<br>
-  					  <li> <b>Graduation Thesis shortlisted</b> by I.T.P.I. (Institute of Town Planners, India) Madhya Pradesh Regional Chapter for the <b>intercollegiate ‘Best Thesis Award’</b>. <b>[2013]</b> </li>                  
-				</div>
-			</article>
+    <section>
 
+        <div class="container">
 
-		<!-- Publications -->
-			<article id="publi" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Publications</h2>
-						<p><b>As Patents</b></p>
-                   [<i>Access them <a href="https://search.ipindia.gov.in/DesignSearch/">here</a> by using the Reference No.</i>]
-						
-						<br><br>
+            <div class="stats">
 
-                    <li> <b>Nagaich, A. A.</b>, et al. (2024). Self-Adapting Rotor Blade Mechanism for Increased Wind Energy Capture Efficiency. <i>Design No. 410710-001.</i> The Patent Office, Government of India. </li>  
-                     <br>
-		     <li> <b>Nagaich, A. A.</b>, et al. (2024). Chemical Separator Device in Water Purification System. <i>Design No. 414285-001.</i> The Patent Office, Government of India. </li>			
-					<br><br>
-
-						<p><b>In Journals</b></p>
-                    <br>
-
-                    
-						<li> Bhattacharya A., <b>Nagaich A. A.</b>, Munoth N. (2026). “Studying the ‘15-minute neighbourhood’ approach for inclusive Urban landscapes in India: A case of Jaipur, Rajasthan.” <i>Architecture, Structures and Construction</i> <b>6</b> (14). https://doi.org/10.1007/s44150-026-00197-z [<i>Access it <a href="https://link.springer.com/article/10.1007/s44150-026-00197-z">here</a></i>]</li>  
-                    <br>
-						<li> <b>Nagaich A. A.</b>, Munoth N. (2025). “Assessment and Strategic Planning for Conservation and Beautification of Shahpura Lake, Bhopal.” <i>Journal of Civil and Environmental Engineering</i> <b>13</b> (11), 60-93. [<i>Access it <a href="https://drive.google.com/file/d/1meX1N9l6feOyZIn5DpQ92oPHhv7QYn5g/view">here</a></i>]</li>  
-                    <br>
-						<li> <b>Nagaich A. A.</b>, Munoth N. (2025). “Psychological Dimensions of Health and Recreation Concerns in Urban Lake Ecosystems: Comparative Insights from Two Urban Lakes of Madhya Pradesh, India.” <i>TPM – Testing, Psychometrics, Methodology in Applied Psychology</i> <b>32</b> (S6), 1780-1789. [<i>Access it <a href="https://tpmap.org/submission/index.php/tpm/article/view/2639/1999">here</a></i>]</li>  
-                    <br>
-						<li> <b>Nagaich A. A.</b>, Munoth N., Pathak P. (2025). “Restoration Strategies of Urban Lakes for Preventing Public Health Related Concerns: Selected Cases from Bhopal and Jabalpur, India.” <i>Journal of Rare Cardiovascular Diseases</i> <b>5</b> (S3), 619-631. [<i>Access it <a href="https://jrcd.eu/media/articles/pdfs/NEMRN279.pdf">here</a></i>]</li>  
-                    <br>
-						<li> <b>Nagaich A. A.</b>, Munoth N. (2024). “Monitoring And Assessing Wetlands Using Google Earth Engine: A Bibliometric Review (2017–2024).” <i>International Journal of Environmental Sciences </i> <b>10</b> (6s), 509-525. [<i>Access it <a href="https://theaspd.com/index.php/ijes/article/view/11552/8260">here</a></i>]</li>  
-                    <br>
-						<li> Munoth N., <b>Nagaich A. A.</b>, Gehlot S. (2022). “Transitioning from Wired City to Super City: a review of selected ‘Smart City’ case studies.” <i>GeoJournal</i> <b>87</b> (Suppl 4), 999-1016. https://doi.org/10.1007/s10708-022-10704-6 [<i>Access it <a href="https://link.springer.com/article/10.1007/s10708-022-10704-6">here</a></i>]</li>  
-                    <br>
-		    		<li> Munoth N., <b>Nagaich A. A.</b> (2015). “Planning Interventions for Lake Conservation: A Case of Shahpura Lake, Bhopal, India.” <i>Journal of the Institution of Engineers (India) Series A </i> <b>96</b>, 193-205. https://doi.org/10.1007/s40030-015-0127-x [<i>Access it <a href="https://link.springer.com/article/10.1007/s40030-015-0127-x">here</a></i>]</li>  
-                    <br>
-                    <li> Munoth N., <b>Nagaich A.</b> (2013). “Reflections on Education and its Purpose: Implications for Teacher Education.” Indian Journal of Higher Education, India, ISSN: 0976-1314, Vol. 4 Issue 2: 110-117. [<i>Access it <a href="https://web.b.ebscohost.com/abstract?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=09761314&asa=Y&AN=94750556&h=2LRXcgcRxGMJlie%2fXhmdCHKEJIFcJbpOcFdvHr7d0y3Ymcs2Bg8FcxG40I8l1iP%2fw4m1xMgOogSkGapfXNEfPA%3d%3d&crl=c&resultNs=AdminWebAuth&resultLocal=ErrCrlNotAuth&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d09761314%26asa%3dY%26AN%3d94750556">here</a></i>]</li> 
-					
-					<br><br>
-
-					<p><b>As Book Chapters</b></p>
-					<br>
-					<li> Parmar V., <b>Nagaich A. A.</b> (2023). “Understanding the Dynamics of the City through Crowdsourced Datasets: A Case Study of Indore City.” In: Durbha, S.S., Sanyal, J., Yang, L., S Chaudhari, S., Bhangale, U., Bharambe, U., & Kurte, K. (Eds.). Advances in Scalable and Intelligent Geospatial Analytics: Challenges and Applications (1st ed.). CRC Press. https://doi.org/10.1201/9781003270928 [<i>Access it <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003270928-23/understanding-dynamics-city-crowdsourced-datasets-vipul-parmar-anugrah-anilkumar-nagaich">here</a></i>]</li>
-					<br>
-					<li> Bhattacharya A., Munoth N., <b>Nagaich A. A.</b> (2022). “The Consequences of Population Growth on Climate Change: A Case of Urbanization Effects vis-à-vis Air Pollutants in Bengaluru, India.” In: Hassan, M.I., Sen Roy, S., Chatterjee, U., Chakraborty, S., Singh, U. (eds) Social Morphology, Human Welfare, and Sustainability. Springer, Cham. https://doi.org/10.1007/978-3-030-96760-4_20 [<i>Access it <a href="https://link.springer.com/chapter/10.1007/978-3-030-96760-4_20">here</a></i>]</li>
-					<br>
-					<li> Jaiswal A., <b>Nagaich A.</b> (2011).“Urban Parking Concepts and Management: An Approach towards the Greener Side.” In: Jain, R., Dhote, K.K., Munoth, N. (eds). Green Cities: Design, Planning and Management. India: MacMillan Advanced Research Series, MacMillan Publishers, ISBN 13: 978-0230-33241-6, pp. 313-328. </li>
-					
-					<br><br>
-
-					<p><b>In Conferences/Conference Proceedings</b></p>
-					<br>
-					<li> <b>Nagaich A. A.</b>, Patel U., Munoth N. “Spatial Planning for Conservation and Restoration of Urban Water Bodies: A Case of Jabalpur, India”; <i> accepted, presented and published at the Twentieth International Conference on Environmental, Cultural, Economic & Social Sustainability, January 24-26, 2024, University of Aveiro, Aveiro, Portugal.</i> </li> 
-					<br>
-					<li> Dabral R., <b>Nagaich A. A.</b> “Planning for Mitigating Flash Flood Events a Case of Almora District in Uttarakhand”; <i> accepted, presented and published at the 2021 IEEE International India Geoscience and Remote Sensing Symposium (InGARSS)</i>, 2021, pp. 14-18, doi: 10.1109/InGARSS51564.2021.9792115.  [<i>Access it <a href="https://ieeexplore.ieee.org/abstract/document/9792115">here</a></i>] </li> 
-					<br>
-					<li> Parmar V., <b>Nagaich A. A.</b> “Understanding the Dynamic of the City through Crowdsourced Datasets: A Case Study of Indore City”; <i>accepted and presented at the National Conference on Internet of Things (IoT) for Building Design and Urban Infrastructure 2021, June 26th-27th, 2021 at M.A.N.I.T., Bhopal, India.</i></li> 
-					<br>	
-					<li> Jaiswal S., Singh G., <b>Nagaich A. A.</b> “Disaster Damage Assessment using Polarimetric SAR Image Analysis: Case of Nepal Earthquake”; <i>accepted at the 2019 IEEE International Geoscience and Remote Sensing Symposium (<a href="https://igarss2019.org/">IGARSS 2019</a>), July 28th-August 2nd, 2019 in Yokohama, Japan.</i></li> 
-					<br>
-					<li><b>Nagaich A. A.</b>, Munoth N. “Planning for Reducing Environmental Impacts in Peri-Urban Areas: A Case of Gaya, India”; <i>accepted and presented at the 2nd Asian Regional Conference on Peri-Urbanization (<a href="http://164.125.174.23:8080/arcp/index_2018.htm">2nd ARCP</a>), November 08-10, 2018, Pusan National University, Busan, South Korea.</i></li> 
-					<br>
-					<li>Maloo N., <b>Nagaich A.</b> “A Regional Planning Approach towards Sustainable Development: A Case of Sikandra Region.” <i>In Proceedings of the International Conference on Urbanism and Green Architecture, October 30-31, 2010. India: N.I.T. Hamirpur, 2010.</i></li>
-
-					<br><br>
-
-					<p><b>In Magazines/Newspapers</b></p>
-					<br>
-					<li> Ancient Indian Town Planning and Architectural Paradigms [January, 2017] (<i>Access it <a href="http://dharmatoday.com/2017/01/02/ancient-indian-town-planning-architectural-paradigms/">here</a></i>)</li>
-					<br>
-					<li> Climate Change and Ancient Indian Town Planning [May, 2017] (<i>Access it <a href="http://dharmatoday.com/2017/05/24/climate-change-ancient-indian-town-planning/">here</a></i>)</li>			
-					<br>		
-					<li> Chanakya’s View on City Planning – ‘A Model for the Future’? [October, 2017] (<i>Access it <a href="http://dharmatoday.com/2017/10/05/chanakyas-view-city-planning-model-future/">here</a></i>)</li>
-  
-					<br><br>
-					<p><b>As Copyrighted Work</b></p>
-					<br>
-					<li> Manual for Bachelor of Planning Thesis; <i>Written by Dr. Navneet Munoth & <b>Anugrah Anilkumar Nagaich</b>.</i> <br>ROC No.: L-85737/2019; ROC Date: 30 Septmeber 2019; Diary No.: 5450/2019-CO/L (<i>Retrieve it <a href="https://copyright.gov.in/SearchRoc.aspx">here</a></i>)</li>
-					<br>
+                <div class="stat-card">
+                    <h3>20+</h3>
+                    <p>Research Publications</p>
                 </div>
 
+                <div class="stat-card">
+                    <h3>10+</h3>
+                    <p>Certifications & Awards</p>
+                </div>
 
+                <div class="stat-card">
+                    <h3>5+</h3>
+                    <p>Research Domains</p>
+                </div>
 
-			</article>
+                <div class="stat-card">
+                    <h3>100%</h3>
+                    <p>Research Passion</p>
+                </div>
 
+            </div>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					
-							<h3>Let's get connected..</h3>
-				</div>
+        </div>
 
-            	<p style="text-align: center;"><a href="mailto:aanagaich@gmail.com">E Mail</a> | <a target='_blank' href="https://scholar.google.co.in/citations?user=uQK4ULMAAAAJ&hl=en">Scholar</a> |  <a target='_blank' href="https://orcid.org/0000-0001-6405-1585">ORCID</a> | <a target='_blank' href="https://publons.com/wos-op/researcher/5385631/anugrah-anilkumar-nagaich/">Publons</a> | <a target='_blank' href="https://github.com/aanagaich/">Github</a> | <a target="_blank" href="https://www.linkedin.com/in/anugrah-anilkumar-nagaich-130b711b/">LinkedIn</a> | <a target="_blank" href="https://twitter.com/anugrahnagaich">Twitter</a></p>
-           		</div>
-        	
-        	</div>
+    </section>
 
-	
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Anugrah. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+    <!-- RESEARCH -->
 
-			</article>
+    <section id="research">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="container">
 
-	</body>
+            <div class="section-title">
+                <h2>Research Interests</h2>
+            </div>
+
+            <div class="interests">
+
+                <div class="interest-card">
+                    🌍 Geoinformatics & Remote Sensing
+                </div>
+
+                <div class="interest-card">
+                    🏙 Smart Cities & Urban Informatics
+                </div>
+
+                <div class="interest-card">
+                    🧠 Machine Learning for Urban Planning
+                </div>
+
+                <div class="interest-card">
+                    💧 Wetland & Lake Conservation
+                </div>
+
+                <div class="interest-card">
+                    🛰 Spatial Analytics & Governance
+                </div>
+
+                <div class="interest-card">
+                    🏛 Indian Knowledge Systems
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PUBLICATIONS -->
+
+    <section id="publications">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Selected Publications</h2>
+            </div>
+
+            <div class="publication-card">
+
+                <h3>
+                    Studying the ‘15-minute neighbourhood’ approach for inclusive Urban landscapes in India
+                </h3>
+
+                <p>
+                    Architecture, Structures and Construction (2026)
+                </p>
+
+            </div>
+
+            <div class="publication-card">
+
+                <h3>
+                    Monitoring and Assessing Wetlands Using Google Earth Engine
+                </h3>
+
+                <p>
+                    International Journal of Environmental Sciences (2024)
+                </p>
+
+            </div>
+
+            <div class="publication-card">
+
+                <h3>
+                    Transitioning from Wired City to Super City
+                </h3>
+
+                <p>
+                    GeoJournal (2022)
+                </p>
+
+            </div>
+
+            <div class="publication-card">
+
+                <h3>
+                    Planning Interventions for Lake Conservation
+                </h3>
+
+                <p>
+                    Journal of the Institution of Engineers (India) (2015)
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Let's Connect</h2>
+            </div>
+
+            <div class="contact-links">
+
+                <a href="mailto:aanagaich@gmail.com">Email</a>
+
+                <a target="_blank"
+                    href="https://scholar.google.co.in/citations?user=uQK4ULMAAAAJ&hl=en">
+                    Google Scholar
+                </a>
+
+                <a target="_blank"
+                    href="https://orcid.org/0000-0001-6405-1585">
+                    ORCID
+                </a>
+
+                <a target="_blank"
+                    href="https://github.com/aanagaich/">
+                    GitHub
+                </a>
+
+                <a target="_blank"
+                    href="https://www.linkedin.com/in/anugrah-anilkumar-nagaich-130b711b/">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Dr. Anugrah A. Nagaich | MANIT Bhopal
+        </p>
+
+    </footer>
+
+</body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
